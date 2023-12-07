@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npm run test
+# npx cypress open - Nao podera ser rodado atraves do husky devido a instabilidade de tempo para localizar elementos E2E com o cypress, que acaba crashando o uso por CMD
